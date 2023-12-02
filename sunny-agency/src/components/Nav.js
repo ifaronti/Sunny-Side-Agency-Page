@@ -1,16 +1,22 @@
 export default function Topnav(){
-    <div className="top-nav-container">
-        <img src="" alt="" />
-        <nav>
-            <img src="" alt="" />
-            <div className="links-wrap">
-                <ul>
-                    <li>About</li>
-                    <li>Services</li>
-                    <li>Project</li>
-                    <li>Contacts</li>
-                </ul>
+    return(
+        <header className="top-nav-container">
+            <img className="header-image" src={`${process.env.PUBLIC_URL}/assets/images/image-header.jpg`} alt="" />
+            <nav>
+                <img className="sunny-logo" src={`${process.env.PUBLIC_URL}/assets/images/logo.svg`} alt="Sunnyside agency logo" />
+                <div className="links-wrap">
+                    <ul>
+                        <li>About</li>
+                        <li>Services</li>
+                        <li>Project</li>
+                        <li>Contacts</li>
+                    </ul>
+                </div>
+            </nav>
+            <div className="arrow-creatives">
+                <h1>WE ARE CREATIVES</h1>
+                <img src={`${process.env.PUBLIC_URL}/assets/images/icon-arrow-down.svg`} alt="" />
             </div>
-        </nav>
-    </div>
+        </header>
+    )
 }
