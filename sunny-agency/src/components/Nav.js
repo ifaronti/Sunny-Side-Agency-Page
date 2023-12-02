@@ -8,7 +8,7 @@ export default function Topnav(){
                     <ul>
                         <li>About</li>
                         <li>Services</li>
-                        <li>Project</li>
+                        <li>Projects</li>
                         <li>Contacts</li>
                     </ul>
                 </div>
