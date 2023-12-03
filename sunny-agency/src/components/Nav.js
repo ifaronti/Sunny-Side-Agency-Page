@@ -9,7 +9,7 @@ export default function Topnav(){
                         <li>About</li>
                         <li>Services</li>
                         <li>Projects</li>
-                        <li>Contacts</li>
+                        <li>CONTACT</li>
                     </ul>
                 </div>
             </nav>

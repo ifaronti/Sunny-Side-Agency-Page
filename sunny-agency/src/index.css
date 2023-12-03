@@ -1,4 +1,31 @@
-
+@font-face {
+    font-family: 'Barlow Bold';
+    src: url(./components/fonts/Barlow/Barlow-Bold.ttf);
+}
+@font-face {
+    font-family: 'Barlow Medium';
+    src: url(./components/fonts/Barlow/Barlow-Medium.ttf);
+}
+@font-face {
+    font-family: 'Barlow Regular';
+    src: url(./components/fonts/Barlow/Barlow-Regular.ttf);
+}
+@font-face {
+    font-family: 'Barlow Light';
+    src: url(./components/fonts/Barlow/Barlow-Light.ttf);
+}
+@font-face {
+    font-family: 'Fraunces Bold';
+    src: url(./components/fonts/Fraunces/Fraunces_9pt-Bold.ttf);
+}
+@font-face {
+    font-family: 'Fraunces Light';
+    src: url(./components/fonts/Fraunces/Fraunces_144pt-Light.ttf);
+}
+@font-face {
+    font-family: 'Fraunces Regular';
+    src: url(./components/fonts/Fraunces/Fraunces_144pt-Regular.ttf);
+}
 
 body{
     display: flex;
@@ -53,17 +80,24 @@ ul li{
     color: #FFFEFB;
     font-size: 1.2rem;
     margin-right: 2.9rem;
-    margin-left: 5px;
+    margin-left: -.8px;
+    font-family: 'Barlow Light';
+    /* letter-spacing: .1px; */
 
 }
 
 ul li:nth-child(4){
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 55px;
     width: 140px;
     background-color: white;
     border-radius: 50px;
-
+    color: hsl(212, 27%, 19%);
+    font-family: 'Fraunces Bold';
+    font-size: 15px;
+    letter-spacing: unset;
 }
 
 
@@ -71,4 +105,17 @@ ul li:nth-child(4){
 .arrow-creatives{
     width: 100%;
     position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    margin-top: 6.9rem;
+    margin-bottom: 5.7rem;
+    font-size: 3.4rem;
+    font-family: 'Fraunces Bold';
+    letter-spacing: 10px;
+    color: white;
 }
