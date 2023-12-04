@@ -1,0 +1,108 @@
+{
+        "grid":
+                [
+                    {   "img":"",
+                        "h1": "Transform your brand",
+                        "description": "We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.",
+                        "more": "LEARN MORE",
+                        "graphic":"",
+                        "graphicP":"",
+                        "photo":"",
+                        "photoP":""
+                    },
+                    {   "img":"image-transform.jpg",
+                        "h1": "",
+                        "description": "",
+                        "more": "",
+                        "graphic":"",
+                        "photo":""
+                    },
+
+                    {   
+                        "img":"image-stand-out.jpg",
+                        "h1": "",
+                        "description": "",
+                        "more": "",
+                        "graphic":"",
+                        "photo":""
+                    },
+
+                    {   
+                        "img":"",
+                        "h1": "Stand out to the right audience",
+                        "description": "Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.",
+                        "more": "LEARN MORE",
+                        "graphic":"",
+                        "graphicP":"",
+                        "photo":"",
+                        "photoP":""
+                    },
+
+                    {   "img":"image-graphic-design.jpg",
+                        "h1": "",
+                        "description": "",
+                        "more": "",
+                        "graphic":"Graphic Design",
+                        "graphicP":"Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.",
+                        "photo":"",
+                        "photoP":""
+                    },
+                    {   "img":"image-photography.jpg",
+                        "h1": "",
+                        "description": "",
+                        "more": "",
+                        "graphic":"",
+                        "graphicP":"",
+                        "photo":"Photography",
+                        "photoP":"Increase your credibility by getting the most stunning, high-quality photos that improve your business image."
+                    }
+
+                ],
+        
+        "CLIENT TESTIMONIALS":
+                [
+                    {
+                        "img":"image-emily.jpg",
+                        "testimonial":"We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.",
+                        "name":"Emily R.",
+                        "position":"Marketing Director"
+
+                    },
+
+                    {
+                        "img":"image-thomas.jpg",
+                        "testimonial":"  Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.",
+                        "name":"Thomas S.",
+                        "position":"Chief Operating Officer"
+
+                    },
+                    
+                    {
+                        "img":"image-jennie.jpg",
+                        "testimonial":"Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!",
+                        "name":"Jennie F.",
+                        "position":"Business Owner"
+                    }
+                    
+                ],
+
+        "flexImg":
+                [
+                    {
+                        "img":"image-gallery-milkbottles.jpg"
+                    },
+
+                    {
+                        "img":"image-gallery-orange.jpg"
+                    },
+
+                    {
+                        "img":"image-gallery-cone.jpg"
+                    },
+                    
+                    {
+                        "img":"image-gallery-sugarcubes.jpg"
+                    }
+                ]
+
+}
