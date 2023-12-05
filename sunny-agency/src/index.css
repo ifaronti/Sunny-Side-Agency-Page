@@ -43,6 +43,16 @@ body{
     margin: 0;
 }
 
+.content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+
+}
+
 .top-nav-container{
     position: relative;
     width: 100%;
@@ -118,4 +128,48 @@ h1{
     font-family: 'Fraunces Bold';
     letter-spacing: 10px;
     color: white;
+}
+
+.grid-wrap{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.card{
+    position: relative;
+    width: 720px;
+    height: 600px;
+    background-color: #FFFBF8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.gridImg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.description{
+    padding-left: 10.3rem;
+}
+
+h2{
+    font-family: 'Fraunces Bold';
+    font-size: 2.55rem;
+    padding-right: 10rem;
+    letter-spacing: -.8px;
+    line-height: 3rem;
+}
+
+.greybg-paragraph{
+    font-size: 18px;
+    font-family: 'Barlow Medium';
+    font-weight: 300;
+    line-height: 30px;
 }
