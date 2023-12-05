@@ -17,6 +17,7 @@ export default function Cards(){
                 image = {card.img}
                 paragraph = {card.description}
                 learn = {card.more}
+                class = {card.class}
             />
         )
     })

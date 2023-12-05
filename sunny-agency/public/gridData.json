@@ -18,7 +18,8 @@
                     {   
                         "h1": "Stand out to the right audience",
                         "description": "Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.",
-                        "more": "LEARN MORE"
+                        "more": "LEARN MORE",
+                        "class": "fourth"
                     }
 
                 ],
