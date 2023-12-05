@@ -6,8 +6,10 @@ export default function Grid(props){
                 {props.h2 && <h2>{props.h2}</h2>}
                 {props.paragraph &&<p className={props.class ? "greybg-paragraph greybg-paragraph2":"greybg-paragraph"}>{props.paragraph}</p>}
                 {props.learn && <button className={props.class ? "learn-more learn-more2":"learn-more"}>{props.learn}</button>}
-                {props.heading && <h2>{props.heading}</h2>}
-                {props.details && <p>{props.details}</p>}
+                <div className="two-cards">
+                    {props.heading && <h2 className={props.photo ? 'photography':'two-header'}>{props.heading}</h2>}
+                    {props.details && <p className={props.photo? 'photo-details':'details'}>{props.details}</p>}
+                </div>
             </div>
         </div>
     )

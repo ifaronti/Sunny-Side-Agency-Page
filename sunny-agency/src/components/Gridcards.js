@@ -20,6 +20,7 @@ export default function Cards(){
                 class = {card.class}
                 heading = {card.heading}
                 details = {card.details}
+                photo = {card.photo}
             />
         )
     })

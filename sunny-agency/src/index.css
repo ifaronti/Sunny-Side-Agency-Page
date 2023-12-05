@@ -146,7 +146,7 @@ h1{
     grid-template-columns: 1fr;
 }
 
-p{
+p,h3{
     z-index: 8;
 }
 
@@ -231,4 +231,40 @@ h2{
 
 .learn-more2::after{
     background-color: hsl(7, 99%, 70%);
+}
+
+.two-cards{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    top: 6.8rem;
+}
+
+.two-header,.photography{
+    color: hsl(167, 40%, 24%);
+    font-size: 1.8rem;
+    font-family: 'Fraunces Bold';
+    margin-top: 9.5rem;
+    margin-left: -.4px;
+}
+
+.photography{
+    color: hsl(198, 62%, 26%)
+}
+
+.photo-details, .details{
+    color: hsl(198, 62%, 26%);
+    width: 48.5%;
+    font-family: 'Barlow Medium';
+    line-height: 28px;
+    position: relative;
+    left: 1px;
+    top: -1.22rem;
+}
+
+.details{
+    color: hsl(167, 40%, 24%);
 }

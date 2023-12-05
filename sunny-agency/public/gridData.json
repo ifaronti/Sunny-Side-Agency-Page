@@ -29,7 +29,8 @@
                     
                     {   "img":"image-photography.jpg",
                         "heading": "Photography",
-                        "details": "Increase your credibility by getting the most stunning, high-quality photos that improve your business image."
+                        "details": "Increase your credibility by getting the most stunning, high-quality photos that improve your business image.",
+                        "photo": true
                     }
 
                 ],
