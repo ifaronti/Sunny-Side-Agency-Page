@@ -146,7 +146,7 @@ h1{
     grid-template-columns: 1fr;
 }
 
-p,h3{
+p,h2, h3{
     z-index: 8;
 }
 
@@ -267,4 +267,50 @@ h2{
 
 .details{
     color: hsl(167, 40%, 24%);
+}
+
+.testimonial-wrap{
+    position: relative;
+    width: 100%;
+    height: 780px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    background-color: #FFFBF8;
+}
+
+.testimonial{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.rating-wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.h3{
+    font-family: 'Fraunces Bold';
+}
+
+.rating{
+    display: flex;
+    text-align: center;
+}
+
+.client-img{
+    border-radius: 100%;
+    height: 4.5rem;
+}
+
+.client-words{
+    font-family: 'Barlow Medium';
+    width: 78%;
+    font-size: 1.17rem;
+    line-height: 32px;
 }
