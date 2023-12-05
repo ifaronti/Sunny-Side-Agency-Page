@@ -13,14 +13,17 @@ export default function Cards(){
     let fourCards = gridData.map(card => {
         return(
             <Grid
-                h2 = {card.h1}
+                h2 = {card.h2}
                 image = {card.img}
                 paragraph = {card.description}
                 learn = {card.more}
                 class = {card.class}
+                heading = {card.heading}
+                details = {card.details}
             />
         )
     })
+    
     return(
         <div className="grid-wrap">
             {fourCards}

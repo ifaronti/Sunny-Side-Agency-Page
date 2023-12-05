@@ -110,8 +110,6 @@ ul li:nth-child(4){
     letter-spacing: unset;
 }
 
-
-
 .arrow-creatives{
     width: 100%;
     position: relative;
@@ -146,6 +144,10 @@ h1{
     display: grid;
     place-items: center;
     grid-template-columns: 1fr;
+}
+
+p{
+    z-index: 8;
 }
 
 .gridImg{
