@@ -21,6 +21,7 @@ export default function Cards(){
                 heading = {card.heading}
                 details = {card.details}
                 photo = {card.photo}
+                flexImg = {card.flexImg}
             />
         )
     })

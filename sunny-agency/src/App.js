@@ -2,6 +2,8 @@ import React from "react";
 import Topnav from './components/Nav'
 import GridCards from './components/Gridcards'
 import Testimonials from "./components/Testimonial";
+import FlexCards from "./components/Flexcards";
+import Footer from "./components/Footer";
 
 export default function App(){
   return(
@@ -10,6 +12,8 @@ export default function App(){
         <Topnav/>
         <GridCards/>
         <Testimonials/>
+        <FlexCards/>
+        <Footer/>
       </div>
     </main>
   )
