@@ -24,11 +24,9 @@ export default function Testimonials(){
 
     return(
         <div className="testimonial-wrap">
-            <div className="testimonial">
-                <h3>CLIENT TESTIMONIALS</h3>
-                <div className="rating">
-                    {rating}
-                </div>
+            <h3>CLIENT TESTIMONIALS</h3>
+            <div className="rating">
+                {rating}
             </div>
         </div>
     )
