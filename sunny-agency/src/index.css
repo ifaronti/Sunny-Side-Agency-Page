@@ -44,6 +44,7 @@ body{
 }
 
 .content{
+    position: relative;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -53,13 +54,32 @@ body{
 
 }
 
+@media only screen and (min-width:350px) and (max-width:499px){
+    body{
+        width: 100%;
+    }
+
+    .app{
+        width: 100%;
+        min-height: 100vh;
+    }
+
+    .content{
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
 /*********************************** Header Section *******************************/
 
 .top-nav-container{
     position: relative;
     width: 100%;
     height: 800px;
-    contain: content;
 }
 
 .header-image{
@@ -77,6 +97,7 @@ nav{
 }
 
 .sunny-logo{
+    position: relative;
     margin-left: 2.5rem;
     height: 2rem;
     width: 10.8rem;
@@ -128,6 +149,39 @@ h1{
     color: white;
 }
 
+@media only screen and (min-width:350px) and (max-width:499px){
+    .top-nav-container{
+        height: 538px;
+    }
+
+    nav{
+        top: 2rem;
+    }
+
+    .nav-list{
+        display: none;
+    }
+
+    .sunny-logo{
+        margin-left: 1.8rem;
+        height: 1.5rem;
+        width: 7.8rem;
+    }
+
+    .arrow-creatives{
+        text-align: center;
+    }
+
+    h1{
+        font-size: 2.4rem;
+        text-align: center;
+        letter-spacing: 8px;
+        margin-top: 7.5rem;
+        margin-bottom: 3.06rem;
+        line-height:48px;
+    }
+}
+
 /************************ 8 Gridcards section **********************/
 
 .grid-wrap{
@@ -159,6 +213,8 @@ p,h2, h3{
 }
 
 .description{
+    width: 100%;
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -203,6 +259,7 @@ h2{
     left: -7.9rem;
     background-position: bottom;
     color: hsl(212, 27%, 19%);
+    cursor: pointer;
 }
 
 .learn-more::after{
@@ -216,6 +273,10 @@ h2{
     z-index: -1;
     background-color: hsl(51, 100%, 49%);
     opacity: .2;
+}
+
+.learn-more:hover::after{
+    opacity: 1;
 }
 
 .fourth{
@@ -269,6 +330,135 @@ h2{
 
 .details{
     color: hsl(167, 40%, 24%);
+}
+
+@media only screen and (min-width: 350px) and (max-width: 500px){
+    .grid-wrap{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .card{
+        position: relative;
+        width: 100%;
+        max-width: 100%;
+        min-height: 310px;
+        background-color: #FFFBF8;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+        text-align: center;
+    }
+
+    .card:nth-child(2){
+        order: -1;
+        height: 312px;
+    }
+
+    .card:nth-child(1){
+        height: 437px;
+    }
+    .card:nth-child(3){
+        height: 312px;
+    }
+    .card:nth-child(4){
+        height: 437px;
+    }
+    
+    p,h2, h3{
+        z-index: 8;
+    }
+    
+    .gridImg{
+        position: absolute;
+        align-self: center;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .description{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        top: -3rem;
+    }
+    
+    h2{
+        align-self: center;
+        position: relative;
+        left:-2rem;
+        top: 3.3rem;
+        line-height: 38px;
+        font-family: 'Fraunces Bold';
+        font-size: 2rem;
+        width: 85%;
+    }
+    
+    .greybg-paragraph{
+        width: 85%;
+        position: relative;
+        top: 2.02rem;
+        margin-left: 0;
+        align-self: center;
+        text-align: center;
+    }
+    
+    .learn-more{
+        align-self: center;
+        position: relative;
+        top: 2.98rem;
+        z-index: 1;
+        left:-2px;
+    }
+    
+    .fourth{
+        margin-left: 0;
+    }
+    
+    .greybg-paragraph2{
+        width: 85%;
+        text-align: center;
+        margin-left: 0;
+    }
+    
+    .learn-more2{
+        margin: 0;
+    }
+    
+    .two-cards{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        /* text-align: center; */
+        position: relative;
+        top: 6.8rem;
+    }
+    
+    .two-header,.photography{
+        margin-top: 9.5rem;
+        margin-left: 0;
+        align-self: center;
+    }
+
+    .photo-details, .details{
+        color: hsl(198, 62%, 26%);
+        width: 86%;
+        font-family: 'Barlow Medium';
+        line-height: 28px;
+        position: relative;
+        left: 1px;
+        top: 1rem;
+        text-align: center;
+    }
+
 }
 
 /******************************* Testimonial section ********************/
@@ -345,6 +535,75 @@ h3{
     color: hsl(210, 4%, 67%);
 }
 
+
+@media only screen and (min-width: 350px) and (max-width: 500px){
+    .testimonial-wrap{
+        position: relative;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #FFFBF8;
+        gap: 3.9rem;
+    }
+    
+    .rating{
+        grid-template-columns: 1fr;
+    }
+    
+    h3{
+        position: relative;
+        top: 10px;
+        font-size: 13px;
+    }
+    
+    .rating-wrap{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        row-gap: 5px;
+    }
+    
+    .client-img{
+        border-radius: 100%;
+        height: 4.5rem;
+        position: relative;
+        top: -7px;
+    }
+    
+    .client-words{
+        font-family: 'Barlow Medium';
+        width: 32ch;
+        font-size: 1.11rem;
+        line-height: 32px;
+        color: hsl(232, 10%, 55%);
+    }
+    
+    .name-position{
+        margin-left:0;
+    }
+    
+    .client-name{
+        font-family: 'Fraunces Bold';
+        font-weight: 700;
+        color: hsl(212, 27%, 19%);
+        font-size: 1.1rem;
+        margin-bottom: -1px;
+    }
+    
+    .client-position{
+        font-family:'Barlow Medium';
+        font-weight: 300;
+        font-size: 14px;
+        color: hsl(210, 4%, 67%);
+    }
+    
+}
+
 /* ********************  Flex image-cards section *************** */
 
 .flex-cards{
@@ -358,6 +617,21 @@ h3{
     position: relative;
     width: 25%;
     height: 100%;
+}
+
+@media only screen and (min-width:350px) and (max-width:500px){
+    .flex-cards{
+        width: 100%;
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 380px;
+    }
+
+    .flexed-image{
+        width: 100%;
+        height: 100%;
+    }
 }
 
 /**************************** Footer section ***********************/

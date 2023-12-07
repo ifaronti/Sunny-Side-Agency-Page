@@ -1,7 +1,21 @@
+import React, {useState, useEffect} from "react"
+
 export default function Grid(props){
+    let [windowWidth, setWindowWidth] = useState(window.innerWidth)
+
+    useEffect(()=> {
+        window.addEventListener('resize', function(){
+            setWindowWidth(window.innerWidth)
+        })
+        return window.removeEventListener('resize', function(){
+            setWindowWidth(window.innerWidth)
+        })
+    }, [])
+
+
     return(
         <div className="card">
-            {props.image && <img className="gridImg" src={`${process.env.PUBLIC_URL}/assets/images/${props.image}`} alt="" />}
+            {props.image && <img className="gridImg" src={windowWidth > 500 ? props.image.desktop : props.image.mobile} alt="" />}
             <div className={props.class ? `${props.class} description`:'description'}>
                 {props.h2 && <h2>{props.h2}</h2>}
                 {props.paragraph &&<p className={props.class ? "greybg-paragraph greybg-paragraph2":"greybg-paragraph"}>{props.paragraph}</p>}

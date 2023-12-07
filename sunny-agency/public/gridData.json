@@ -7,12 +7,17 @@
                         "more": "LEARN MORE"
                     },
                     
-                    {   "img":"image-transform.jpg"
+                    {   "img":{
+                                    "desktop":"./assets/images/image-transform.jpg",
+                                    "mobile":"./assets/images/mobile/image-transform.jpg"
+                                }
                 
                     },
-
-                    {   
-                        "img":"image-stand-out.jpg"
+                    {   "img":{
+                                    "desktop":"./assets/images/image-stand-out.jpg",
+                                    "mobile":"./assets/images/mobile/image-stand-out.jpg"
+                                }
+                
                     },
 
                     {   
@@ -22,12 +27,22 @@
                         "class": "fourth"
                     },
 
-                    {   "img":"image-graphic-design.jpg",
+                    {   "img":
+                                {
+                                    "desktop":"./assets/images/image-graphic-design.jpg",
+                                    "mobile":"./assets/images/mobile/image-graphic-design.jpg"
+                                },
+                    
                         "heading": "Graphic Design",
                         "details": "Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention."
                     },
                     
-                    {   "img":"image-photography.jpg",
+                    {   "img":
+                                {
+                                    "desktop":"./assets/images/image-photography.jpg",
+                                    "mobile":"./assets/images/mobile/image-photography.jpg"
+                                },
+                                
                         "heading": "Photography",
                         "details": "Increase your credibility by getting the most stunning, high-quality photos that improve your business image.",
                         "photo": true
@@ -65,19 +80,37 @@
         "flexImg":
                 [
                     {
-                        "img":"image-gallery-milkbottles.jpg"
+                        "img":
+                            {
+                                "desktop":"./assets/images/image-gallery-milkbottles.jpg",
+                                "mobile":"./assets/images/mobile/image-gallery-milkbottles.jpg"
+                            }
+                                
                     },
 
                     {
-                        "img":"image-gallery-orange.jpg"
+                        "img":
+                            {
+                                "desktop":"./assets/images/image-gallery-orange.jpg",
+                                "mobile":"./assets/images/mobile/image-gallery-orange.jpg"
+                            }
+                        
                     },
 
                     {
-                        "img":"image-gallery-cone.jpg"
+                        "img":
+                            {
+                                "desktop":"./assets/images/image-gallery-cone.jpg",
+                                "mobile":"./assets/images/mobile/image-gallery-cone.jpg"
+                            }
                     },
                     
                     {
-                        "img":"image-gallery-sugarcubes.jpg"
+                        "img":
+                            {
+                                "desktop":"./assets/images/image-gallery-sugarcubes.jpg",
+                                "mobile":"./assets/images/mobile/image-gallery-sugarcubes.jpg"
+                            }
                     }
                 ]
 
