@@ -203,7 +203,7 @@ h1{
     }
 
     .link-bars:nth-child(3){
-        transform: translateY(-5px) rotate(45deg);
+        transform: translateY(-5.5px) rotate(45deg);
     }
 
     .mobile-links-wrap{
