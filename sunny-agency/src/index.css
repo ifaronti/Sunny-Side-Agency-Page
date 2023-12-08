@@ -208,14 +208,15 @@ h1{
 
     .mobile-links-wrap{
         display: flex;
-        justify-content: center; 
-        align-items: center;
+        justify-content: left; 
+        align-items: left;
+        transition: all 0.5s ease-in-out;
     }
 
     .nav-list{
         position: absolute;
         top: 2.16rem;
-        margin-right: 6.2rem;
+        right: 1.9rem;
         height: 328px;
         width: 289px;
         background-color: #FFFBF8;
@@ -226,6 +227,7 @@ h1{
         align-self: right;
         z-index: 150;
         gap: 2rem;
+        transition: all 0.5 ease-in-out;
     }
 
     .nav-list::before{
