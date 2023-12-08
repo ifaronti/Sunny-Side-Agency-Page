@@ -15,7 +15,7 @@ export default function Grid(props){
 
     return(
         <div className="card">
-            {props.image && <img className="gridImg" src={windowWidth > 500 ? props.image.desktop : props.image.mobile} alt="" />}
+            {props.image && <img key={props.image.key} className="gridImg" src={windowWidth > 500 ? props.image.desktop : props.image.mobile} alt="" />}
             <div className={props.class ? `${props.class} description`:'description'}>
                 {props.h2 && <h2>{props.h2}</h2>}
                 {props.paragraph &&<p className={props.class ? "greybg-paragraph greybg-paragraph2":"greybg-paragraph"}>{props.paragraph}</p>}

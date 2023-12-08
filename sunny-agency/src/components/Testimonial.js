@@ -11,7 +11,7 @@ export default function Testimonials(){
 
     let rating = testimonial.map(rating => {
         return(
-            <div className="rating-wrap">
+            <div className="rating-wrap" key={rating.name}>
                 <img className="client-img" src={`${process.env.PUBLIC_URL}/assets/images/${rating.img}`} alt=""/>
                 <p className="client-words">{rating.testimonial}</p>
                 <div className="name-position">

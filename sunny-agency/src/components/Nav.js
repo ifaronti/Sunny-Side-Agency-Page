@@ -2,6 +2,8 @@ import React, {useState, useEffect} from 'react'
 
 export default function Topnav(){
     let [windowWidth, setWindowWidth] = useState(window.innerWidth)
+    let [activeLink, setActiveLink] = useState('Contact')
+    let [showlink, setShowLink] = useState(false)
 
     useEffect(()=> {
         window.addEventListener('resize', function(){
@@ -12,19 +14,26 @@ export default function Topnav(){
         })
     }, [])
 
+    let theImage = windowWidth > 500 ? 'image-header.jpg' : 'mobile/image-header.jpg'
+
     return(
         <header className="top-nav-container">
-            <img className="header-image" src={`${process.env.PUBLIC_URL}/assets/images/${windowWidth > 500 ? 'image-header.jpg' : 'mobile/image-header.jpg'}`} alt="" />
+            <img className="header-image" src={`${process.env.PUBLIC_URL}/assets/images/${theImage}`} alt="" />
             <nav>
                 <img className="sunny-logo" src={`${process.env.PUBLIC_URL}/assets/images/logo.svg`} alt="Sunnyside agency logo" />
-                <div className="links-wrap">
+                <div className={showlink ? "mobile-links-wrap":'links-wrap'}>
                     <ul className='nav-list'>
-                        <li>About</li>
-                        <li>Services</li>
-                        <li>Projects</li>
-                        <li>CONTACT</li>
+                        <li onClick={()=> setActiveLink('About')} className={activeLink === 'About' ? 'activeLink':''}>{activeLink === 'About'? 'ABOUT':'About'}</li>
+                        <li onClick={()=> setActiveLink('Services')} className={activeLink === 'Services' ? 'activeLink':''}>{activeLink === 'Services'? 'SERVICES':'Services'}</li>
+                        <li onClick={()=> setActiveLink('Projects')} className={activeLink === 'Projects' ? 'activeLink':''}>{activeLink === 'Projects'? 'PROJECTS':'Projects'}</li>
+                        <li onClick={()=> setActiveLink('Contact')} className={activeLink === 'Contact' ? 'activeLink':''}>{activeLink === 'Contact'? 'CONTACT':'Contact'}</li>
                     </ul>
                 </div>
+                <section className='mobile-menu' onClick={()=> setShowLink(prevShowLink => !prevShowLink)}>
+                    <div className={showlink ? 'btn-span link-bars':'btn-span'}></div>
+                    <div className={showlink ? 'btn-span link-bars':'btn-span'}></div>
+                    <div className={showlink ? 'btn-span link-bars':'btn-span'}></div>
+                </section>
             </nav>
             <div className="arrow-creatives">
                 <h1>WE ARE CREATIVES</h1>

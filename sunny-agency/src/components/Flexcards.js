@@ -22,12 +22,12 @@ export default function FlexCards(){
 
     let cards = flexImg.map(image => {
         return (
-            <img className='flexed-image' src={windowWidth > 500 ? image.img.desktop : image.img.mobile} alt="/" />
+            <img key={image.img.key} className='flexed-image' src={windowWidth > 500 ? image.img.desktop : image.img.mobile} alt="/" />
         )
     })
 
     return(
-        <div className="flex-cards">
+        <div className="flex-cards" key={2}>
             {cards}
         </div>
     )

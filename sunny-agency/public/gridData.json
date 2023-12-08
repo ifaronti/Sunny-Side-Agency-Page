@@ -4,18 +4,21 @@
                     { 
                         "h2": "Transform your brand",
                         "description": "We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.",
-                        "more": "LEARN MORE"
+                        "more": "LEARN MORE",
+                        "key":10
                     },
                     
                     {   "img":{
                                     "desktop":"./assets/images/image-transform.jpg",
-                                    "mobile":"./assets/images/mobile/image-transform.jpg"
+                                    "mobile":"./assets/images/mobile/image-transform.jpg",
+                                    "key":11
                                 }
                 
                     },
                     {   "img":{
                                     "desktop":"./assets/images/image-stand-out.jpg",
-                                    "mobile":"./assets/images/mobile/image-stand-out.jpg"
+                                    "mobile":"./assets/images/mobile/image-stand-out.jpg",
+                                    "key":12
                                 }
                 
                     },
@@ -83,7 +86,8 @@
                         "img":
                             {
                                 "desktop":"./assets/images/image-gallery-milkbottles.jpg",
-                                "mobile":"./assets/images/mobile/image-gallery-milkbottles.jpg"
+                                "mobile":"./assets/images/mobile/image-gallery-milkbottles.jpg",
+                                "key":"1"
                             }
                                 
                     },
@@ -92,7 +96,8 @@
                         "img":
                             {
                                 "desktop":"./assets/images/image-gallery-orange.jpg",
-                                "mobile":"./assets/images/mobile/image-gallery-orange.jpg"
+                                "mobile":"./assets/images/mobile/image-gallery-orange.jpg",
+                                "key":"2"
                             }
                         
                     },
@@ -101,7 +106,8 @@
                         "img":
                             {
                                 "desktop":"./assets/images/image-gallery-cone.jpg",
-                                "mobile":"./assets/images/mobile/image-gallery-cone.jpg"
+                                "mobile":"./assets/images/mobile/image-gallery-cone.jpg",
+                                "key":"3"
                             }
                     },
                     
@@ -109,7 +115,8 @@
                         "img":
                             {
                                 "desktop":"./assets/images/image-gallery-sugarcubes.jpg",
-                                "mobile":"./assets/images/mobile/image-gallery-sugarcubes.jpg"
+                                "mobile":"./assets/images/mobile/image-gallery-sugarcubes.jpg",
+                                "key":"4"
                             }
                     }
                 ]
