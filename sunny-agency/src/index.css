@@ -183,20 +183,91 @@ h1{
     .mobile-menu{
         display: block;
         cursor: pointer;
+        z-index: 190;
+    }
+
+    .btn-span{
+        transition: all 0.5s ease-in-out;
+    }
+
+    .link-bars{
+        transition: all 0.5s ease-in-out;
     }
 
     .link-bars:nth-child(2){
         opacity: 0;
     }
 
+    .link-bars:nth-child(1){
+        transform:translateY(10.5px) rotate(-45deg);
+    }
+
+    .link-bars:nth-child(3){
+        transform: translateY(-5px) rotate(45deg);
+    }
+
     .mobile-links-wrap{
         display: flex;
+        justify-content: center; 
+        align-items: center;
+    }
+
+    .nav-list{
+        position: absolute;
+        top: 2.16rem;
+        margin-right: 6.2rem;
+        height: 328px;
+        width: 289px;
+        background-color: #FFFBF8;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        align-self: right;
+        z-index: 150;
+        gap: 2rem;
+    }
+
+    .nav-list::before{
+        content: "";
+        position: absolute;
+        width: 329px;
+        height: 4rem;
+        background-color: #3DBEFF;
+        transform: rotate(47deg);
+        left: 3.2rem;
+        top: -9.5rem;
+    }
+
+    .nav-list::after{
+        content: "";
+        position: absolute;
+        width: 329px;
+        height: 2rem;
+        background-color: #3DBEFF;
+        transform: rotate(0);
+        left: -1.5rem;
+        top: -10px;
+    }
+
+    .nav-list li{
+        color: hsl(232, 10%, 55%);
+        font-weight: 700;
+        position: relative;
+        top: 13px;
+    }
+
+    .activeLink{
+        background-color: #FBD601;
+        font-weight: 300 !important;
+        color: hsl(212, 27%, 19%) !important;
     }
 
     .sunny-logo{
         margin-left: 1.8rem;
         height: 1.5rem;
         width: 7.8rem;
+        z-index: 200;
     }
 
     h1{
