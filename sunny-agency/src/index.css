@@ -134,6 +134,7 @@ ul li{
     margin-right: 2.9rem;
     margin-left: -.8px;
     font-family: 'Barlow Light';
+    cursor: pointer;
 }
 
 .activeLink{
@@ -1131,6 +1132,7 @@ footer{
     position: relative;
     top: 6px;
     margin-top: -5.6rem;
+    cursor: pointer;
 }
 
 @media only screen and (min-width:350px) and (max-width:599px){
