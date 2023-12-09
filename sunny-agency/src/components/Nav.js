@@ -14,7 +14,7 @@ export default function Topnav(){
         })
     }, [])
 
-    let imageSRC = windowWidth > 599 ? 'image-header.jpg' : 'mobile/image-header.jpg'
+    let imageSRC = windowWidth > 1439 ? 'image-header.jpg' : 'mobile/image-header.jpg'
     let wrapClass = showlink ? "mobile-links-wrap":'links-wrap'
     let linksClass = showlink ? 'btn-span link-bars':'btn-span'
 
@@ -24,7 +24,7 @@ export default function Topnav(){
             <nav>
                 <img className="sunny-logo" src={`${process.env.PUBLIC_URL}/assets/images/logo.svg`} alt="Sunnyside agency logo" />
                 <div className={wrapClass}>
-                    <ul className='nav-list'>
+                    <ul className='nav-list four-links'>
                         <li onClick={()=> setActiveLink('About')} 
 
                             className={activeLink === 'About' ? 'activeLink':''}
