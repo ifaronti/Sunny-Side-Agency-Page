@@ -54,11 +54,24 @@ body{
 
 }
 
-@media only screen and (min-width:350px) and (max-width:499px){
-    body{
+@media only screen and (min-width:350px) and (max-width:599px){
+
+    .app{
         width: 100%;
+        min-height: 100vh;
     }
 
+    .content{
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1100px){
     .app{
         width: 100%;
         min-height: 100vh;
@@ -80,15 +93,20 @@ body{
     position: relative;
     width: 100%;
     height: 800px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .header-image{
     width: 100%;
+    height: 100%;
     position: absolute;
 }
 
 nav{
-    position: relative;
+    position: absolute;
     top: 1.2rem;
     width: 100%;
     display: flex;
@@ -131,6 +149,12 @@ ul li{
     letter-spacing: unset;
 }
 
+.activeLink:hover{
+    cursor: pointer;
+    background-color: hsl(206, 74%, 82%);
+    color: white;
+}
+
 .mobile-menu{
     position: relative;
     display: none;
@@ -152,6 +176,7 @@ ul li{
 .arrow-creatives{
     width: 100%;
     position: relative;
+    top: -5.27rem;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -159,7 +184,6 @@ ul li{
 }
 
 h1{
-    margin-top: 6.9rem;
     margin-bottom: 5.7rem;
     font-size: 3.4rem;
     font-family: 'Fraunces Bold';
@@ -167,7 +191,7 @@ h1{
     color: white;
 }
 
-@media only screen and (min-width:350px) and (max-width:499px){
+@media only screen and (min-width:350px) and (max-width:599px){
     .top-nav-container{
         height: 538px;
     }
@@ -177,7 +201,15 @@ h1{
     }
 
     .links-wrap{
-        display: none;
+        opacity: 0;
+        transition: all 1s ease-in-out;
+
+    }
+
+    .mobile-links-wrap{
+        opacity: 1;
+        transition: all 1s ease-in-out;
+        z-index: 20;
     }
 
     .mobile-menu{
@@ -204,13 +236,6 @@ h1{
 
     .link-bars:nth-child(3){
         transform: translateY(-5.5px) rotate(45deg);
-    }
-
-    .mobile-links-wrap{
-        display: flex;
-        justify-content: left; 
-        align-items: left;
-        transition: all 0.5s ease-in-out;
     }
 
     .nav-list{
@@ -270,6 +295,126 @@ h1{
         height: 1.5rem;
         width: 7.8rem;
         z-index: 200;
+    }
+
+    .arrow-creatives{
+        top: -3.32rem;
+    }
+
+    h1{
+        font-size: 2.4rem;
+        text-align: center;
+        letter-spacing: 8px;
+        margin-top: 7.5rem;
+        margin-bottom: 3.06rem;
+        line-height:48px;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1100px){
+    nav{
+        top: 2rem;
+    }
+
+    .links-wrap{
+        opacity: 0;
+        transition: all 1s ease-in-out;
+
+    }
+
+    .mobile-links-wrap{
+        opacity: 1;
+        transition: all 1s ease-in-out;
+        z-index: 20;
+    }
+
+    .mobile-menu{
+        display: block;
+        cursor: pointer;
+        z-index: 190;
+    }
+
+    .btn-span{
+        transition: all 0.5s ease-in-out;
+    }
+
+    .link-bars{
+        transition: all 0.5s ease-in-out;
+    }
+
+    .link-bars:nth-child(2){
+        opacity: 0;
+    }
+
+    .link-bars:nth-child(1){
+        transform:translateY(10.5px) rotate(-45deg);
+    }
+
+    .link-bars:nth-child(3){
+        transform: translateY(-5.5px) rotate(45deg);
+    }
+
+    .nav-list{
+        position: absolute;
+        top: 2.16rem;
+        right: 1.9rem;
+        height: 328px;
+        width: 289px;
+        background-color: #FFFBF8;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        align-self: right;
+        z-index: 150;
+        gap: 2rem;
+        transition: all 0.5 ease-in-out;
+    }
+
+    .nav-list::before{
+        content: "";
+        position: absolute;
+        width: 329px;
+        height: 4rem;
+        background-color: #3DBEFF;
+        transform: rotate(47deg);
+        left: 3.2rem;
+        top: -9.5rem;
+    }
+
+    .nav-list::after{
+        content: "";
+        position: absolute;
+        width: 329px;
+        height: 2rem;
+        background-color: #3DBEFF;
+        transform: rotate(0);
+        left: -1.5rem;
+        top: -10px;
+    }
+
+    .nav-list li{
+        color: hsl(232, 10%, 55%);
+        font-weight: 700;
+        position: relative;
+        top: 13px;
+    }
+
+    .activeLink{
+        background-color: #FBD601;
+        font-weight: 300 !important;
+        color: hsl(212, 27%, 19%) !important;
+    }
+
+    .sunny-logo{
+        margin-left: 1.8rem;
+        height: 1.5rem;
+        width: 7.8rem;
+        z-index: 200;
+    }
+
+    .arrow-creatives{
+        top: -5.5rem;
     }
 
     h1{
@@ -432,7 +577,7 @@ h2{
     color: hsl(167, 40%, 24%);
 }
 
-@media only screen and (min-width: 350px) and (max-width: 500px){
+@media only screen and (min-width: 350px) and (max-width: 599px){
     .grid-wrap{
         display: flex;
         flex-direction: column;
@@ -444,7 +589,6 @@ h2{
     .card{
         position: relative;
         width: 100%;
-        max-width: 100%;
         min-height: 310px;
         background-color: #FFFBF8;
         display: flex;
@@ -537,7 +681,6 @@ h2{
         justify-content: center;
         flex-direction: column;
         align-items: center;
-        /* text-align: center; */
         position: relative;
         top: 6.57rem;
     }
@@ -562,6 +705,145 @@ h2{
         text-align: center;
     }
 
+    .details{
+        color: hsl(167, 40%, 24%);
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1100px){
+    .grid-wrap{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .card{
+        position: relative;
+        width: 100%;
+        min-height: 310px;
+        background-color: #FFFBF8;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+        text-align: center;
+    }
+
+    .card:nth-child(2){
+        /* order: -1; */
+        height: 600px;
+    }
+
+    .card:nth-child(1){
+        height: 600px;
+    }
+    .card:nth-child(3){
+        height: 600px;
+    }
+    .card:nth-child(4){
+        height: 600px;
+    }
+
+    p,h2, h3{
+        z-index: 8;
+    }
+    
+    .gridImg{
+        position: absolute;
+        align-self: center;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .description{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        top: -3rem;
+    }
+    
+    h2{
+        align-self: center;
+        position: relative;
+        left:-2rem;
+        top: 3.3rem;
+        line-height: 38px;
+        font-family: 'Fraunces Bold';
+        font-size: 2.5rem;
+        width: 85%;
+    }
+    
+    .greybg-paragraph{
+        width: 85%;
+        max-width: 500px;
+        position: relative;
+        top: 2.02rem;
+        margin-left: 0;
+        align-self: center;
+        text-align: center;
+        font-size: 1.3rem;
+    }
+    
+    .learn-more{
+        align-self: center;
+        position: relative;
+        top: 2.98rem;
+        z-index: 1;
+        left:-2px;
+    }
+    
+    .fourth{
+        margin-left: 0;
+    }
+    
+    .greybg-paragraph2{
+        width: 85%;
+        text-align: center;
+        margin-left: 0;
+    }
+    
+    .learn-more2{
+        margin: 0;
+    }
+    
+    .two-cards{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        top: 6.57rem;
+    }
+    
+    .two-header,.photography{
+        margin-top: 9.5rem;
+        margin-left: 4rem;
+    }
+
+    .photography{
+        margin-left: 3.2rem;
+    }
+
+    .photo-details, .details{
+        color: hsl(198, 62%, 26%);
+        width: 350px;
+        font-family: 'Barlow Medium';
+        line-height: 28px;
+        position: relative;
+        left: 0;
+        top: 2.4rem;
+        text-align: center;
+        font-size: 1.3rem;
+    }
+
+    .details{
+        color: hsl(167, 40%, 24%);
+    }
 }
 
 /******************************* Testimonial section ********************/
@@ -639,7 +921,54 @@ h3{
 }
 
 
-@media only screen and (min-width: 350px) and (max-width: 500px){
+@media only screen and (min-width: 350px) and (max-width: 599px){
+    .testimonial-wrap{
+        position: relative;
+        height: 1258px;
+        gap: 3.9rem;
+    }
+    
+    .rating{
+        position: relative;
+        top: -1.6rem;
+        grid-template-columns: 1fr;
+    }
+    
+    h3{
+        position: relative;
+        top: 0px;
+        font-size: 15px;
+        letter-spacing: 4.5px;
+    }
+    
+    .rating-wrap{
+        row-gap: 5px;
+    }
+    
+    .client-img{
+        position: relative;
+        top: .74rem;
+    }
+    
+    .client-words{
+        font-family: 'Barlow Medium';
+        width: 32ch;
+        font-size: 1.11rem;
+        line-height: 32px;
+        color: hsl(232, 10%, 55%);
+        margin-bottom: 2rem;
+        position: relative;
+        top: 1.4rem;
+    }
+    
+    .name-position{
+        margin-left:0;
+        position: relative;
+        top: -2px;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1100px){
     .testimonial-wrap{
         position: relative;
         height: 1258px;
@@ -701,7 +1030,7 @@ h3{
     height: 100%;
 }
 
-@media only screen and (min-width:350px) and (max-width:500px){
+@media only screen and (min-width:350px) and (max-width:599px){
     .flex-cards{
         width: 100%;
         max-width: 100%;
@@ -716,8 +1045,28 @@ h3{
     }
 }
 
+@media only screen and (min-width: 600px) and (max-width: 1100px){
+    .flex-cards{
+        width: 100%;
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 375px;
+    }
+
+    .flexed-image{
+        width: 100%;
+        height: 100%;
+       height: 100%;
+
+    }
+    
+}
+
+
 /**************************** Footer section ***********************/
 footer{
+    position: relative;
     width: 100%;
     height: 350px;
     background-color: #91D3C5;
@@ -767,7 +1116,28 @@ footer{
     margin-top: -5.6rem;
 }
 
-@media only screen and (min-width:350px) and (max-width:500px){
+@media only screen and (min-width:350px) and (max-width:599px){
+    .footer-logo{
+        position: relative;
+        top:1.2rem;
+    }
+
+    .icons{
+        gap: 1.77rem;
+        position: relative;
+        top: -2px;
+        margin-top: -5.6rem;
+    }
+
+    .footer-list{
+        gap: 9px;
+        position: relative;
+        left: 4.3px;
+        top: -2.7rem;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1100px){
     .footer-logo{
         position: relative;
         top:1.2rem;

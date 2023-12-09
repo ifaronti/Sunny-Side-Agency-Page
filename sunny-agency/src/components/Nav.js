@@ -14,11 +14,11 @@ export default function Topnav(){
         })
     }, [])
 
-    let theImage = windowWidth > 500 ? 'image-header.jpg' : 'mobile/image-header.jpg'
+    // let theImage = windowWidth > 450 ? 'image-header.jpg' : 'mobile/image-header.jpg'
 
     return(
         <header className="top-nav-container">
-            <img className="header-image" src={`${process.env.PUBLIC_URL}/assets/images/${theImage}`} alt="" />
+            <img className="header-image" src={`${process.env.PUBLIC_URL}/assets/images/${ windowWidth > 599 ? 'image-header.jpg' : 'mobile/image-header.jpg'}`} alt="" />
             <nav>
                 <img className="sunny-logo" src={`${process.env.PUBLIC_URL}/assets/images/logo.svg`} alt="Sunnyside agency logo" />
                 <div className={showlink ? "mobile-links-wrap":'links-wrap'}>
