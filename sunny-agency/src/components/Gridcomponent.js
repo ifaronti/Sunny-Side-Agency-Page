@@ -26,7 +26,7 @@ export default function Grid(props){
 
     return(
         <div className="card">
-            {props.image && <img key={props.image.key} className="gridImg" src={windowWidth > 599 ? props.image.desktop : props.image.mobile} alt="" />}
+            {props.image && <img key={props.image.key} className="gridImg" src={windowWidth > 499 ? props.image.desktop : props.image.mobile} alt="" />}
 
             <div className={detailsDiv}>
                 {props.h2 && <h2 className={headerClass}>{props.h2}</h2>}

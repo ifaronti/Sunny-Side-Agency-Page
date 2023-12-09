@@ -27,8 +27,8 @@ export default function FlexCards(){
     })
 
     return(
-        <div className="flex-cards" key={2}>
+        <section className="flex-cards" key={2}>
             {cards}
-        </div>
+        </section>
     )
 }

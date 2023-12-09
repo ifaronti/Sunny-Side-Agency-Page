@@ -27,8 +27,8 @@ export default function Cards(){
     })
     
     return(
-        <div className="grid-wrap">
+        <section className="grid-wrap">
             {fourCards}
-        </div>
+        </section>
     )
 }

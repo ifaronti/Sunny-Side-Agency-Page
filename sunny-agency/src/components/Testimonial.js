@@ -27,11 +27,11 @@ export default function Testimonials(){
     })
 
     return(
-        <div className="testimonial-wrap">
+        <section className="testimonial-wrap">
             <h3>CLIENT TESTIMONIALS</h3>
-            <div className="rating">
+            <article className="rating">
                 {rating}
-            </div>
-        </div>
+            </article>
+        </section>
     )
 }

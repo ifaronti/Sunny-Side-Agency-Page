@@ -23,7 +23,7 @@ export default function Topnav(){
             <img className="header-image" src={`${process.env.PUBLIC_URL}/assets/images/${imageSRC}`} alt="" />
             <nav>
                 <img className="sunny-logo" src={`${process.env.PUBLIC_URL}/assets/images/logo.svg`} alt="Sunnyside agency logo" />
-                <div className={wrapClass}>
+                <section className={wrapClass}>
                     <ul className='nav-list four-links'>
                         <li onClick={()=> setActiveLink('About')} 
 
@@ -57,17 +57,17 @@ export default function Topnav(){
                         {activeLink === 'Contact'? 'CONTACT':'Contact'}
                         </li>
                     </ul>
-                </div>
+                </section>
                 <section className='mobile-menu' onClick={()=> setShowLink(prevShowLink => !prevShowLink)}>
                     <div className={linksClass}></div>
                     <div className={linksClass}></div>
                     <div className={linksClass}></div>
                 </section>
             </nav>
-            <div className="arrow-creatives">
+            <article className="arrow-creatives">
                 <h1>WE ARE CREATIVES</h1>
                 <img src={`${process.env.PUBLIC_URL}/assets/images/icon-arrow-down.svg`} alt="" />
-            </div>
+            </article>
         </header>
     )
 }
