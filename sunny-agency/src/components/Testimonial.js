@@ -13,11 +13,15 @@ export default function Testimonials(){
         return(
             <div className="rating-wrap" key={rating.name}>
                 <img className="client-img" src={`${process.env.PUBLIC_URL}/assets/images/${rating.img}`} alt=""/>
+
                 <p className="client-words">{rating.testimonial}</p>
+
                 <div className="name-position">
                     <p className="client-name">{rating.name}</p>
+
                     <p className="client-position">{rating.position}</p>
                 </div>
+                
             </div>
         )
     })

@@ -528,9 +528,14 @@ h2{
     margin-left: -4.3rem;
 }
 
+.fourth-H2{
+    position: relative;
+    left: -1.3rem;
+}
+
 .greybg-paragraph2{
-    width: 57%;
-    margin-left: 18px;
+    width: 62%;
+    margin-left: 12px;
 }
 
 .learn-more2{
