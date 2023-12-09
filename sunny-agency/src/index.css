@@ -679,6 +679,19 @@ h2{
         z-index: 1;
         left:-2px;
     }
+
+    .learn-more::after{
+        position: absolute;
+        left: 7px;
+        top: 15px;
+        content: "";
+        width: 8.5rem;
+        border-radius: 50px;
+        height: 9px;
+        z-index: -1;
+        background-color: hsl(51, 100%, 49%);
+        opacity: .2;
+    }
     
     .fourth{
         margin-left: 0;
